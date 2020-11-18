@@ -3,6 +3,7 @@ test.db
 mysql.json
 exercise.ipynb
 samples/
+googlemapskey.txt
 
 # gitignore template for Jupyter Notebooks
 # website: http://jupyter.org/
