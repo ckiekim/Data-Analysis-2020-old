@@ -4,6 +4,9 @@ mysql.json
 exercise.ipynb
 samples/
 googlemapskey.txt
+kakaomapkey.txt
+openweatherkey.txt
+roadapikey.txt
 
 # gitignore template for Jupyter Notebooks
 # website: http://jupyter.org/
