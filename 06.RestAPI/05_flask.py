@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    start_coords = (37.240867, 127.177968)
+    start_coords = (37.550966, 126.849532)
     folium_map = folium.Map(location=start_coords, zoom_start=14)
     return folium_map._repr_html_()
 
