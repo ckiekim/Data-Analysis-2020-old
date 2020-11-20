@@ -7,6 +7,7 @@ googlemapskey.txt
 kakaomapkey.txt
 openweatherkey.txt
 roadapikey.txt
+커피업소정보.csv
 
 # gitignore template for Jupyter Notebooks
 # website: http://jupyter.org/
