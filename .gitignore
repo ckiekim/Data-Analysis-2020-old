@@ -8,6 +8,7 @@ kakaomapkey.txt
 openweatherkey.txt
 roadapikey.txt
 커피업소정보.csv
+chromedriver.exe
 
 # gitignore template for Jupyter Notebooks
 # website: http://jupyter.org/
