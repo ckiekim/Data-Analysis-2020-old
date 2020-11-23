@@ -9,6 +9,7 @@ openweatherkey.txt
 roadapikey.txt
 커피업소정보.csv
 chromedriver.exe
+station_data/
 
 # gitignore template for Jupyter Notebooks
 # website: http://jupyter.org/
