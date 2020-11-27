@@ -15,17 +15,18 @@ def markerr():
     df = pd.read_csv('address3.csv')
     df['icon'] = ['map-marker', 'cloud', 'gift', 'info-sign', 'ok-circle']
     color_dict = {'Clear': 'blue', 'Snow': 'white', 'Rain': 'gray', 'Extreme': 'red', 'Clouds': 'orange', 'Mist': 'green'}
-    mapping = folium.Map(location=[df.lat.mean(), df.lng.mean()],
-                    zoom_start=12)
+    map = folium.Map(location=[df.lat.mean(), df.lng.mean()], zoom_start=12)
     for i in df.index:
         folium.Marker(
             location=[df.lat[i], df.lng[i]],
             popup=df.bldg[i],
             tooltip=f'{df.desc[i]}, {df.temp[i]}',
             icon=folium.Icon(color=color_dict[df.weather[i]], icon=df.icon[i])
-        ).add_to(mapping)
+        ).add_to(map)
+    title_html = '<h3 align="center" style="font-size:20px"><b>5개 지역 날씨</b></h3>'   
+    map.get_root().html.add_child(folium.Element(title_html))
     filename = 'marker.html'
-    mapping.save(f'static/{filename}')
+    map.save(f'static/{filename}')
     return render_template('marker_temp.html', filename=filename)
 
 if __name__ == '__main__':
